@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body{
+	font-family: 'Patrick Hand', sans-serif;
+	color: #1d5673;
+	margin: 0;
+}
+main{
+	max-width: 1200px;
+	margin: 20px auto;
+}
+a:link{
+	color: blue;
+}
+a:visited{
+	color: purple;
+}
+a:hover{
+	color: purple;
+}
+a:active{
+	color: black;
+}
+h1{
+	text-align: center;
+	font-size: 4em;
+	padding-bottom: 10pt;
+	padding-top: 5pt;
+}
+/* Nav Bar CSS */
+nav{
+	background-color: #1d5673;
+	font-size: 16pt;
+	line-height: 250%;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+}
+nav li{
+	display: inline;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 1.25em;
+}
+nav a:link {
+	color: white;
+}
+nav a:visited {
+	color: #63b2da;
+}
+nav a:hover {
+	color: #92d3f3;
+	text-decoration: none;
+}
+nav a:active {
+	color: white;
+	text-decoration: none;
+}
+blockquote{
+	font-size: 18pt;
+	line-height: 150%;
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+footer{
+	text-align: center;
+	padding: 30px 10px 10px 10px;
+	background-color: #1d5673;
+	color: white;
+}
+img{
+	display: block;
+	margin: 0 auto;
+	border-radius: 7.5em;
+}
+.fa{
+	font-size: 2.5em;
+}
+.home-hero{
+	background-image: url(images/header.jpg);
+	height: 475px;
+	background-size: cover;
+	background-position: center;
+	padding: 10px 10px 10px 30px;
+	border-radius: 2.5em;
+}
+.col-sm-4 h3{
+	text-align: center;
+	font-size: 24pt;
+	line-height: 150%;
+}
+.vote{
+	color: #63b2da;
+}
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 1.8em;
+}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 1.5em;
+	}
+}

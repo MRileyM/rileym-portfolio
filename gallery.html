@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+	<title>Riley Mingo - Gallery</title>
+	<meta name="description" content="This part of the site shows off the various sketches, drawings, or other designs for projects or leisure." />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="rileym-favicon.png" type="image/ico">
+</head>
+
+<body>
+	<header>
+		<img src="images/rileym-headlogo.png" alt="Riley Mingo: Graphic Designer and More!" height="108px" width="270px" class="img-fluid headlogo">
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="resume.html">Resume</a></li>
+			<li><a href="portfolio.html">Portfolio</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12">
+					<h2>This is the Gallery!</h2>
+					<p>Here are various sketches/extra material<br>that have been used in my projects or just for fun!</p>
+				</div>
+			</div>
+			<div class="row gallery toppadding">
+				<div class="col-sm-6 preview">
+        			<img id="preview" class="img-fluid" src="images/gallery/rileym-elementals.jpg" alt="Preview Image"  height="auto" width="auto"/>
+				</div>
+				<div class="col-sm-6 gallery-thumbnails">
+					<img onclick="document.getElementById('preview').src=document.getElementById('img1').src" id="img1" class="img-fluid" src="images/gallery/rileym-bakeryscene.jpg" alt="Bakery Scene" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img2').src" id="img2" class="img-fluid" src="images/gallery/rileym-bakes.jpg" alt="Various Bakes" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img3').src" id="img3" class="img-fluid" src="images/gallery/rileym-castle.jpg" alt="Bakery Castle" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img4').src" id="img4" class="img-fluid" src="images/gallery/rileym-muffins.jpg" alt="Muffin and Cupcake" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img5').src" id="img5" class="img-fluid" src="images/gallery/rileym-knight.jpg" alt="Magic Knight" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img6').src" id="img6" class="img-fluid" src="images/gallery/rileym-lime.jpg" alt="Lime the Witch" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img7').src" id="img7" class="img-fluid" src="images/gallery/rileym-broom.jpg" alt="Witch Broom" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img8').src" id="img8" class="img-fluid" src="images/gallery/rileym-birds1.jpg" alt="Birds 1" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img9').src" id="img9" class="img-fluid" src="images/gallery/rileym-birds2.jpg" alt="Birds 2" />
+					<img onclick="document.getElementById('preview').src=document.getElementById('img10').src" id="img10" class="img-fluid" src="images/gallery/rileym-elementals.jpg" alt="Elementals" />
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-bottom">
+		<small>&copy; 2023 Riley Mingo. All rights reserved.</small>
+		</div>
+	</footer>
+	<!--jQuery, Popper, and Bootstrap Javascript files-->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

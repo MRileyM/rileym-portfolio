@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/* Notes for color palette:
+	Main color = #69bfa3
+	Alt color = #3d997a
+	Dark color = #246655
+	Off-black = #041a14
+	Off-white = #e6f2f2 */
+/* Main CSS*/
+body{
+	font-family: 'Lora', serif;
+	margin: 0;
+}
+main{
+	max-width: 1000px;
+	margin: 20px auto;
+	margin-top: 0px;
+}
+a:link{
+	color: blue;
+}
+a:visited{
+	color: purple;
+}
+a:hover{
+	color: purple;
+}
+a:active{
+	color: black;
+}
+h1 {
+	font-family: 'Delicious Handrawn', sans-serif;
+	color: #e6f2f2;
+	font-size: 72px;
+	text-align: center;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+h2 {
+	font-family: 'Delicious Handrawn', sans-serif;
+	color: #246655;
+	font-size: 32px;
+}
+h3{
+	font-family: 'Delicious Handrawn', sans-serif;
+	color: #3d997a;
+	font-size: 24px;
+	padding-top: .25em;
+}
+p{
+	color: #041a14;
+	font-size: 16px;
+}
+small {
+	color: #041a14;
+	text-align: center;
+	font-size: 14px;
+}
+footer{
+	text-align: center;
+	background-color: #69bfa3;
+	padding: 10px;
+}
+/* Nav Bar CSS */
+nav{
+	background-color: #69bfa3;
+}
+nav ul{
+	list-style-type: none;
+	text-align: center;
+	margin-bottom: 0px;
+}
+nav li{
+	display: inline;
+	font-size: 18px;
+}
+nav a{
+	text-decoration: none;
+	padding-right: 10px;
+}
+nav a:link {
+	color: #041a14;
+}
+nav a:visited {
+	color: #246655;
+}
+nav a:hover {
+	color: #e6f2f2;
+	text-decoration: none;
+}
+nav a:active {
+	color: #3d997a;
+	text-decoration: none;
+}
+/* Content CSS */
+li {
+	line-height: 175%;
+}
+button {
+	font-family: 'Delicious Handrawn', sans-serif;
+	font-size: 24px;
+	color: #e6f2f2;
+	background-color: #3d997a;
+	border-radius: 5px;
+	border-style: none;
+	padding: 6px 18px;
+}
+button:hover {
+	background-color: #246655;
+}
+button:active {
+	background-color: #69bfa3;
+}
+/* Class & ID CSS */
+.row{
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+.toppadding{
+	padding-top: 0em;
+}
+.paddingreset{
+	padding-top: 0em;
+	padding-bottom: .5em;
+}
+.headlogo{
+	margin: 0 auto;
+	display: block;
+	max-height: 108px;
+	width: auto;
+}
+.heroshot{
+	background-image: url(images/rileym-texture.jpg);
+	background-repeat: repeat-x, repeat-y;
+	background-size: 100%;
+}
+.profilediv{
+	text-align: center;
+}
+.profile{
+	max-height: 270px;
+	width: auto;
+}
+.buttonlink{
+	text-align: center;
+}
+.fa{
+	color: #69bfa3;
+}
+.owlgifs{
+	text-align: center;
+}
+.owlgifs img{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+/*Video Container CSS*/
+.video-container {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.video-container::after {
+	padding-top: 56.25%;
+	display: block;
+	content: '';
+}
+.video-container iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*Gallery CSS*/
+.preview{
+	display:block;
+	margin:0 auto;
+}
+.gallery-thumbnails{
+	display:block;
+	margin:0 auto;
+	text-align: center;
+}
+.gallery .preview{
+    width:100%;
+    height:auto;
+}
+
+.gallery .gallery-thumbnails img {
+    width:100px;
+    height:100px;
+    margin: 3px 10px 10px 0;
+}
+
+.gallery .gallery-thumbnails img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.gallery .preview img#preview {
+    padding: 1px;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto !important;
+    display: block !important;
+}
+/* Grid CSS */
+#resumegrid{
+	display: grid;
+}
+#skills{
+	grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+#programs{
+	grid-row: 1 / 2;
+	grid-column: 2 / 3;
+}
+#education{
+	grid-row: 1 / 2;
+	grid-column: 3 / 4;
+}
+/* CSS Adjustments for Tablets */
+@media only screen and (max-width: 1024px) {
+	h1{
+		font-size: 64px;
+	}
+	h3{
+		padding-top: .25em;
+	}
+	p{
+		font-size: 14px;
+	}
+	small{
+		font-size: 12px;
+	}
+	li{
+		font-size: 14px;
+	}
+	nav li{
+		font-size: 16px;
+	}
+	.row{
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+	.toppadding{
+	padding-top: 0em;
+	}
+	.paddingreset{
+	padding-top: 0em;
+	padding-bottom: .25em;
+	}
+}
+/* CSS Adjustments for Smartphones */
+@media only screen and (max-width: 768px) {
+	h1{
+		font-size: 48px;
+	}
+	.row{
+		padding-top: .5em;
+		padding-bottom: .5em;
+	}
+	.toppadding{
+	padding-top: 0em;
+	}
+	.topresume{
+		padding-top: 1em;
+	}
+	.topfolio{
+		padding-top: .75em;
+	}
+	.paddingreset{
+	padding-top: 0em;
+	padding-bottom: .125em;
+	}
+	.buttonlink{
+		padding-top: 1em;
+		padding-bottom: 1em;
+	}
+}
+/*Extra Edit for when the columns turn into one column*/
+@media only screen and (max-width: 575px) {
+	.folioimage{
+		max-width: 75%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.gallery-thumbnails{
+		margin-top: 1em;
+	}
+}
